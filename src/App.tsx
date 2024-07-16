@@ -4,6 +4,7 @@ import SignUpForm from "./page/auth/forms/signUpForm";
 import { Home } from "./page/_root/page";
 import AuthLayout from "./page/auth/authLayout";
 import RootLayout from "./page/_root/rootLayout";
+import { Toaster } from "@/components/ui/toaster";
 const App = () => {
   return (
     <Routes>
@@ -14,6 +15,7 @@ const App = () => {
       <Route element={<RootLayout />}>
         <Route index element={<Home />} />
       </Route>
+      <Toaster />
     </Routes>
   );
 };
